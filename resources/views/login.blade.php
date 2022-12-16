@@ -1,7 +1,7 @@
 @include('layout.header')
 <body class="hold-transition layout-top-nav">
     <div class="wrapper">
-        @include('layout.nav')
+        @include('nav')
         <section class="content">
             <div class="container-fluid">
                 <div class="row">

@@ -11,7 +11,13 @@
         <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
             @if(Session::has('id'))
             <li class="nav-item dropdown">
-                <a class="nav-link" href="../logout" id="login" name="login"><b style="color:white">Logout</b></a>
+                <a class="nav-link" href="../logout" id="logout" name="logout"><b style="color:white">Logout</b></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="../template" id="template" name="template"><b style="color:white">Template</b></a>
+            
+              
+             
             </li>
             @endif
             @if(!(Session::has('id')))

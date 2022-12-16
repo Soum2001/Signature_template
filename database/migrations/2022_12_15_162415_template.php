@@ -17,7 +17,7 @@ class Template extends Migration
             $table->bigInteger('id')->autoIncrement();
             $table->bigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
-            $table->string('template_html');
+            $table->longText('template_html');
             $table->timestamps();
         });
     }

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegistrationController;
+use App\Http\Controllers\TemplateController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,3 +28,8 @@ Route::get('/registeration_page', function () {
 });
 Route::post('register', [RegistrationController::class, 'register']);
 Route::get('logout', [LoginController::class, 'logout']);
+
+Route::post('store_list', [TemplateController::class, 'storeTemplate']);
+Route::get('template', [TemplateController::class, 'renderTemplate']);
+
+Route::get('/view_template/{template_id}', [TemplateController::class, 'viewTemplate']);

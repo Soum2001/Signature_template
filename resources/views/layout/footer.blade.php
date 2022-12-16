@@ -21,12 +21,35 @@
 <script src="{{url('assets/jquery/jquery.min.js')}}"></script>
 <script src="{{url('assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{url('assets/dist/js/adminlte.min.js?v=3.2.0')}}"></script>
-<script src="{{url('assets/js/change.js')}}"></script>
-
+<script src="{{url('assets/js/template.js')}}"></script>
+<script src="assets/plugins/toastr/toastr.min.js"></script>
 <script type="text/javascript"
   src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js">
 </script>
-
+<script type="text/javascript" src="assets/js/magicscroll.js"></script>
+<script type="text/javascript">
+    var MagicScrollOptions = {};
+    MagicScrollOptions = {
+        onReady: function () {
+            console.log('onReady', arguments[0]);
+        },
+        onStop: function () {
+            console.log('onStop', arguments[0]);
+        },
+        onItemHover: function () {
+            console.log('onItemHover', arguments[0]);
+        },
+        onItemOut: function () {
+            console.log('onItemOut', arguments[0]);
+        },
+        onMoveStart: function () {
+            console.log('onMoveStart', arguments[0]);
+        },
+        onMoveEnd: function () {
+            console.log('onMoveEnd', arguments[0]);
+        }
+    };
+</script>
 <!-- JavaScript Bundle with Popper -->
 
 <!-- jQuery -->

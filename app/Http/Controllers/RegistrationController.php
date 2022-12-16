@@ -16,7 +16,7 @@ class RegistrationController extends Controller
         $user = User::create($input);
         if ($user) {
             session()->put('id', $user['id']);
-            return view('Login');
+            return view('login');
         }
     }
 }
